@@ -1,6 +1,5 @@
-var weather = prompt("Welcom to the Weather Man, which is me of course. I would like to know, what is the weather right now?");
+var weather = prompt("Welcome to the Weather Man, which is me of course. I would like to know, what is the weather right now?");
 
-weather = weather.toLowerCase();
 
 if (weather == "sunny") {
 	document.getElementById("animation").src="//giphy.com/embed/AEy0YJWLIjzSo";
