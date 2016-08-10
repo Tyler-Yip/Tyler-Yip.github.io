@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" scr="luckyDraw.js"></script>
+	<link rel="stylesheet" type="text/css" href="luckyDraw.css">
+	<title>Lucky Draw</title>
+	<link href='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>My Lucky Draw</h1>
+	<p>
+		<form id="luckyForm">
+			<br>
+			<input type="text" placeholder="item1"/>
+			<br>
+			<input type="text" placeholder="item2"/>
+			<br>
+			<input type="text" placeholder="item3"/>
+			<br>
+			<input type="text" placeholder="item4"/>
+			<br>
+			<input type="text" placeholder="item5"/>
+			<br>
+			<input type="text" placeholder="item6"/>
+			<br>
+			<input type="text" placeholder="item7"/>
+			<br>
+			<input type="text" placeholder="item8"/>
+			<br>
+			<input type="text" placeholder="item9"/>
+			<br>
+			<input type="text" placeholder="item10"/>
+		</form>
+		<button onclick="draw()">Click for the Action!</button>
+		<p id="result"></p>
+	</p>
+	<script type="text/javascript">
+		var luckyForm;
+		var luckyIndex;
+		var item;
+		function draw() {
+			luckyForm = document.getElementById("luckyForm");
+			luckyIndex = Math.floor(Math.random() * 9);
+			item = luckyForm.elements[luckyIndex].value;
+			console.log(item);
+			document.getElementById("result").innerHTML = "The Winner is: " + item;
+}
+	</script>
+</body>
+</html>
