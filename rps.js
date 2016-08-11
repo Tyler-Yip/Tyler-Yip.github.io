@@ -1,6 +1,7 @@
 function play() {
 	console.log("reached function.");
-	var userChoice = document.getElementById("rpsForm").elements[0].value;
+	var form = document.getElementById("rpsForm");
+	var userChoice = form.elements[0].value;
 	console.log(userChoice);
 
 	var options = ["rock", "paper", "scissors"];
