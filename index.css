@@ -1,11 +1,12 @@
 * {
-	font-family: Reem Kufi;
+	font-family: 'Reem Kufi';
 	background-color: aqua;
 }
 
-li {
-	font-size: 20px;
+li a {
+	font-size: 30px;
 	color: red;
+	text-decoration: none;
 }
 
 h1 {
