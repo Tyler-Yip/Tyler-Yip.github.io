@@ -9,19 +9,26 @@ var randomNumber = Math.floor(Math.random() * 3);
 computerChoice = options[randomNumber];
 
 if (userChoice == computerChoice) {
-	document.getElementById("result").innerHTML = "It's a tie!";
+	//document.getElementById("result").innerHTML = "It's a tie!";
+
 } else if (userChoice == "rock" && computerChoice == "scissors") {
-	document.getElementById("result").innerHTML = "You win!";
+	//document.getElementById("result").innerHTML = "You win!";
+	alert("You Win!");
 } else if (userChoice == "rock" && computerChoice == "paper") {
-	document.getElementById("result").innerHTML = "computer wins!";
+	//document.getElementById("result").innerHTML = "computer wins!";
+	alert("Computer Wins!");
 } else if (userChoice == "paper" && computerChoice == "rock") {
-	document.getElementById("result").innerHTML = "You win!";
+	//document.getElementById("result").innerHTML = "You win!";
+	alert("You Win!");
 } else if (userChoice == "paper" && computerChoice == "scissors") {
-	document.getElementById("result").innerHTML = "computer wins!";
+	//document.getElementById("result").innerHTML = "computer wins!";
+	alert("Computer Wins!");
 } else if (userChoice == "scissors" && computerChoice == "paper") {
-	document.getElementById("result").innerHTML = "You wins!";
+	//document.getElementById("result").innerHTML = "You wins!";
+	alert("You Win!");
 } else if (userChoice == "scissors" && computerChoice == "rock") {
-	document.getElementById("result").innerHTML = "computer wins!";
+	//document.getElementById("result").innerHTML = "computer wins!";
+	alert("Computer Wins!");
 } else {
 	alert("Invalid Input!");
 }
