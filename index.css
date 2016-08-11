@@ -5,7 +5,7 @@
 
 li a {
 	font-size: 30px;
-	color: red;
+	color: black;
 	text-decoration: none;
 }
 
@@ -15,5 +15,5 @@ h1 {
 
 #tyler {
 	height: 100px;
-	width: 100px;
+	width: auto;
 }
