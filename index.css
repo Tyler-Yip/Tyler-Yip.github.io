@@ -12,3 +12,8 @@ li a {
 h1 {
 	color: yellow;
 }
+
+img {
+	height: 100px;
+	width: 100px;
+}
