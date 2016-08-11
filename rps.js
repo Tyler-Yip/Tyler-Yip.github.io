@@ -1,6 +1,7 @@
 function play() {
-
+	console.log("reached function.");
 	var userChoice = document.getElementById("rpsForm").elements[0].value;
+	console.log(userChoice);
 
 	var options = ["rock", "paper", "scissors"];
 
@@ -9,6 +10,7 @@ function play() {
 	var randomNumber = Math.floor(Math.random() * 3);
 
 	computerChoice = options[randomNumber];
+	console.log(computerChoice);
 
 	if (userChoice == computerChoice) {
 		//document.getElementById("result").innerHTML = "It's a tie!";
@@ -34,6 +36,7 @@ function play() {
 	} else {
 		alert("Invalid Input!");
 	}
+	console.log("finnished function");
 }
 
 function playAgain() {
