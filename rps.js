@@ -1,8 +1,6 @@
 function play() {
-	console.log("reached function.");
 	var form = document.getElementById("rpsForm");
 	var userChoice = form.elements[0].value;
-	console.log(userChoice);
 
 	var options = ["rock", "paper", "scissors"];
 
@@ -11,7 +9,6 @@ function play() {
 	var randomNumber = Math.floor(Math.random() * 3);
 
 	computerChoice = options[randomNumber];
-	console.log(computerChoice);
 	alert("The computer's choice is: " + computerChoice);
 
 	if (userChoice == computerChoice) {
@@ -37,9 +34,14 @@ function play() {
 	} else {
 		alert("Invalid Input!");
 	}
-	console.log("finnished function");
 }
 
 function playAgain() {
 	window.location.reload();
+}
+
+
+
+function return() {
+	window.location.href="index.html";
 }
