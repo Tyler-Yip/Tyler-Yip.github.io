@@ -1,8 +1,13 @@
 * {
 	font-family: Reem Kufi;
 	background-color: green;
+	margin-bottom: 10px;
 }
 
 h1 {
 	color: yellow;
+} 
+
+p {
+	font-size: 150%;
 }
